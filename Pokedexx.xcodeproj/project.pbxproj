@@ -22,6 +22,7 @@
 		4D88C3711F9274E7004DD376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D88C3741F9274E7004DD376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D88C3761F9274E7004DD376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D88C37C1F927760004DD376 /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 				4D88C36E1F9274E7004DD376 /* Main.storyboard */,
 				4D88C3711F9274E7004DD376 /* Assets.xcassets */,
 				4D88C3731F9274E7004DD376 /* LaunchScreen.storyboard */,
+				4D88C37C1F927760004DD376 /* pokemon.csv */,
 				4D88C3761F9274E7004DD376 /* Info.plist */,
 			);
 			path = Pokedexx;
