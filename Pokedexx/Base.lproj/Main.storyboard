@@ -28,12 +28,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4e-mv-PDV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6h-dX-qzw">
-                                        <rect key="frame" x="107.5" y="14.5" width="106.5" height="31.5"/>
-                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="27"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8t-iz-7Kg">
                                         <rect key="frame" x="8" y="15.5" width="30" height="30"/>
                                         <constraints>
@@ -46,6 +40,12 @@
                                             <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxi-BO-nky"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6h-dX-qzw">
+                                        <rect key="frame" x="107.5" y="14.5" width="106.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="27"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -56,7 +56,7 @@
                                     <constraint firstAttribute="height" constant="60" id="Ye5-jG-LTg"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-VO-gsQ">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-VO-gsQ">
                                 <rect key="frame" x="0.0" y="60" width="320" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="0O1-bg-cTE"/>
@@ -138,6 +138,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="I5P-OJ-pRt" id="iGX-x3-wV6"/>
+                        <outlet property="searchBar" destination="5X9-VO-gsQ" id="gG2-m2-g7G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
