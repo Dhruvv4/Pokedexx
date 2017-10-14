@@ -31,7 +31,7 @@
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K0h-jQ-vVZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="K0h-jQ-vVZ">
                                 <rect key="frame" x="0.0" y="105" width="320" height="463"/>
                             </imageView>
                         </subviews>
@@ -56,4 +56,7 @@
             <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1920" height="1200"/>
+    </resources>
 </document>
