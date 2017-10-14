@@ -12,6 +12,9 @@
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Medium</string>
         </array>
+        <array key="pokemonFont.ttf">
+            <string>PokemonSolidNormal</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -24,8 +27,32 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4e-mv-PDV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6h-dX-qzw">
+                                        <rect key="frame" x="107.5" y="14.5" width="106.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="27"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8t-iz-7Kg">
+                                        <rect key="frame" x="8" y="15.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="892-xm-PQa"/>
+                                            <constraint firstAttribute="height" constant="30" id="kXc-Hx-cZe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" image="music.png"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxi-BO-nky"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="S6h-dX-qzw" firstAttribute="centerY" secondItem="z4e-mv-PDV" secondAttribute="centerY" id="Cpb-F0-z2l"/>
+                                    <constraint firstItem="S6h-dX-qzw" firstAttribute="centerX" secondItem="z4e-mv-PDV" secondAttribute="centerX" id="Mvd-yp-8CC"/>
+                                    <constraint firstItem="c8t-iz-7Kg" firstAttribute="leading" secondItem="z4e-mv-PDV" secondAttribute="leading" constant="8" id="N24-Jk-31l"/>
+                                    <constraint firstItem="c8t-iz-7Kg" firstAttribute="centerY" secondItem="z4e-mv-PDV" secondAttribute="centerY" id="VOa-ub-YOa"/>
                                     <constraint firstAttribute="height" constant="60" id="Ye5-jG-LTg"/>
                                 </constraints>
                             </view>
@@ -115,11 +142,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
+            <point key="canvasLocation" x="116.25" y="133.09859154929578"/>
         </scene>
     </scenes>
     <resources>
         <image name="4" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music.png" width="100" height="100"/>
     </resources>
 </document>
