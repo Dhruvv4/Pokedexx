@@ -27,10 +27,36 @@ class PokemonDetailVC: UIViewController {
     
     @IBAction func backBtn(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+        if nextEvoImg.isHidden {
+            nextEvoImg.isHidden = false
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        nameLbl.text = pokemon.name.capitalized
+        mainImg.image = UIImage(named: pokemon.pokedexID)
+        currentEvoImg.image = UIImage(named: pokemon.pokedexID)
+        pokemon.downloadPokemonDetails {
+            
+            self.updateUI()
+        }
+    }
+    
+    func updateUI() {
+        attackLbl.text = pokemon.attack
+        defenseLbl.text = pokemon.defense
+        heightLbl.text = pokemon.height
+        weightLbl.text = pokemon.weight
+        pokedexIDLbl.text = pokemon.pokedexID
+        typeLbl.text = pokemon.type
+        descriptionLbl.text = pokemon.description
+        if pokemon.nextEvolutionLevel == "" {
+            evolutionLbl.text = "Reached Max Evolution"
+            nextEvoImg.isHidden = true
+        } else {
+            evolutionLbl.text = "Next Evolution: \(pokemon.nextEvolutionName) LVL \(pokemon.nextEvolutionLevel)"
+            nextEvoImg.image = UIImage(named: pokemon.nextEvolutionId)
+        }
     }
 
     
